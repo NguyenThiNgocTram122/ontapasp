@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="BaiThi.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server"> <style>
+                                         div{
+                                             display: flex; justify-content: center; align-items:center;
+                                         }
+                                     </style>
+        <div>
+            <table border="1" style="width:100%;text-align:center">
+                <tr>
+                    <td>
+                        <asp:Image ID="Image1" Width="100" runat="server" ImageUrl="~/anh/logo.png" />
+                    </td>
+                    <td>
+                        TRƯỜNG CAO ĐẲNG CÔNG THƯƠNG VIỆT NAM 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink1" runat="server"> Cập nhật</asp:HyperLink>
+                        <br
+                        <asp:HyperLink ID="HyperLink2" runat="server">Tìm kiếm </asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:Label ID="Label1" runat="server" Text="NGUYỄN THỊ NGỌC TRÂM - CCN04.6B"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
